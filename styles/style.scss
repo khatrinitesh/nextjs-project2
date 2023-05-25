@@ -1,0 +1,47 @@
+$color-primary:#f9f9f9;
+$main-body:#c9c9c9;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+ul,ol{
+    list-style-type: none;
+    margin:0 !important;
+    padding:0;
+}
+
+body{
+    background-color: $color-primary;
+}
+
+header{
+    background-color: #000;
+    ul{
+        display: flex;
+        li{
+            a{
+                color:#fff;
+                display: block;
+                padding: 10px 20px;
+                &.active{
+                    background-color: red;
+                }
+            }
+        }
+    }
+}
+
+.main_content{
+    height: calc(100vh - 76px);
+    background-color:$main-body;
+    padding: 50px;
+}
+
+footer{
+    background-color: #222;
+    color:#fff;
+    padding: 10px;
+}
