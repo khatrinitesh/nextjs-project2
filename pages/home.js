@@ -1,10 +1,6 @@
 import React,{useState} from 'react';
 import Banner from '@/components/banner';
-import dynamic from 'next/dynamic';
 
-const DynamicComponent = dynamic(() =>
-  import('../components/hello').then((mod) => mod.Hello),
-);
 
 
 export default function Home() {
